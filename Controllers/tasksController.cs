@@ -34,5 +34,20 @@ namespace BE_01.Controllers
             }
             return Ok(task);
         }
+
+        //Create new task
+        [HttpPost]
+        public ActionResult AddTask(CreatedTaskRequest request)
+        {
+
+            if (request == null || string.IsNullOrEmpty(request.Title))
+            {
+                return BadRequest(new { error = "Title can't be empty :(" });
+            }
+            ToDoTask newTask = new ToDoTask(request.Title);
+
+            Tasks.Add(newTask);
+            return CreatedAtAction(nameof(GetTaskById), new { id = newTask.Id }, newTask);
+        }
     }
 }
