@@ -20,6 +20,15 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+app.MapGet("/", () => Results.Ok(new
+{
+    name = "Task API",
+    version = "1.0",
+    endpoints = new[] { "/tasks" }
+}));
+
+app.MapGet("/health", () => Results.Ok(new { status = "ok" }));
+
 app.MapControllers();
 
 app.Run();
