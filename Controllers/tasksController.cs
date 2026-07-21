@@ -49,5 +49,37 @@ namespace BE_01.Controllers
             Tasks.Add(newTask);
             return CreatedAtAction(nameof(GetTaskById), new { id = newTask.Id }, newTask);
         }
+
+        //Update existing task
+        [HttpPut("{id}")]
+        public ActionResult UpdateTask(int id, UpdatedTaskRequest updatedTask)
+        {
+            var task = Tasks.FirstOrDefault(task => task.Id == id);
+            if (task == null)
+            {
+                return NotFound(new { error = $"Task {id} not found :(" });
+            }
+            if (updatedTask == null || string.IsNullOrEmpty(updatedTask.Title))
+            {
+                return BadRequest(new { error = "Title can't be empty :(" });
+            }
+            task.Title = updatedTask.Title;
+            task.Done = updatedTask.Done;
+
+            return Ok(task);
+        }
+
+        //Delete existing task
+        [HttpDelete("{id}")]
+        public ActionResult DeleteTask(int id)
+        {
+            var task = Tasks.FirstOrDefault(task => task.Id == id);
+            if (task == null)
+            {
+                return NotFound(new { error = $"Task {id} not found :(" });
+            }
+            Tasks.Remove(task);
+            return NoContent();
+        }
     }
 }
