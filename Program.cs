@@ -9,6 +9,10 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+// Initialize the database
+var connectionString = builder.Configuration.GetConnectionString("TasksDb");
+BE_01.Data.TaskDatabase.Initialize(connectionString);
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

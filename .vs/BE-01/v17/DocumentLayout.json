@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Joe\\source\\repos\\BE-01\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|c:\\users\\joe\\source\\repos\\be-01\\data\\taskdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|solutionrelative:data\\taskdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|c:\\users\\joe\\source\\repos\\be-01\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|c:\\users\\joe\\source\\repos\\be-01\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|c:\\users\\joe\\source\\repos\\be-01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|c:\\users\\joe\\source\\repos\\be-01\\models\\todotask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|solutionrelative:models\\todotask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|c:\\users\\joe\\source\\repos\\be-01\\models\\createdtaskrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|solutionrelative:models\\createdtaskrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|c:\\users\\joe\\source\\repos\\be-01\\models\\updatedtaskrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|solutionrelative:models\\updatedtaskrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|c:\\users\\joe\\source\\repos\\be-01\\models\\createdtaskrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|solutionrelative:models\\createdtaskrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|c:\\users\\joe\\source\\repos\\be-01\\models\\todotask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|solutionrelative:models\\todotask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|c:\\users\\joe\\source\\repos\\be-01\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|solutionrelative:controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|c:\\users\\joe\\source\\repos\\be-01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,8 +42,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -47,6 +59,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TaskDatabase.cs",
+              "DocumentMoniker": "C:\\Users\\Joe\\source\\repos\\BE-01\\Data\\TaskDatabase.cs",
+              "RelativeDocumentMoniker": "Data\\TaskDatabase.cs",
+              "ToolTip": "C:\\Users\\Joe\\source\\repos\\BE-01\\Data\\TaskDatabase.cs",
+              "RelativeToolTip": "Data\\TaskDatabase.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwEAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-11T09:07:22.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Joe\\source\\repos\\BE-01\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Joe\\source\\repos\\BE-01\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-11T09:03:26.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "README.md",
               "DocumentMoniker": "C:\\Users\\Joe\\source\\repos\\BE-01\\README.md",
               "RelativeDocumentMoniker": "README.md",
@@ -59,7 +97,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "UpdatedTaskRequest.cs",
               "DocumentMoniker": "C:\\Users\\Joe\\source\\repos\\BE-01\\Models\\UpdatedTaskRequest.cs",
               "RelativeDocumentMoniker": "Models\\UpdatedTaskRequest.cs",
@@ -67,11 +105,12 @@
               "RelativeToolTip": "Models\\UpdatedTaskRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-21T09:36:23.451Z"
+              "WhenOpened": "2026-07-21T09:36:23.451Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CreatedTaskRequest.cs",
               "DocumentMoniker": "C:\\Users\\Joe\\source\\repos\\BE-01\\Models\\CreatedTaskRequest.cs",
               "RelativeDocumentMoniker": "Models\\CreatedTaskRequest.cs",
@@ -79,41 +118,44 @@
               "RelativeToolTip": "Models\\CreatedTaskRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-21T09:30:38.465Z"
+              "WhenOpened": "2026-07-21T09:30:38.465Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "ToDoTask.cs",
               "DocumentMoniker": "C:\\Users\\Joe\\source\\repos\\BE-01\\Models\\ToDoTask.cs",
               "RelativeDocumentMoniker": "Models\\ToDoTask.cs",
               "ToolTip": "C:\\Users\\Joe\\source\\repos\\BE-01\\Models\\ToDoTask.cs",
               "RelativeToolTip": "Models\\ToDoTask.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-21T09:19:15.624Z"
+              "WhenOpened": "2026-07-21T09:19:15.624Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "tasksController.cs",
               "DocumentMoniker": "C:\\Users\\Joe\\source\\repos\\BE-01\\Controllers\\tasksController.cs",
               "RelativeDocumentMoniker": "Controllers\\tasksController.cs",
               "ToolTip": "C:\\Users\\Joe\\source\\repos\\BE-01\\Controllers\\tasksController.cs",
               "RelativeToolTip": "Controllers\\tasksController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwFIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-21T09:17:09.139Z"
+              "WhenOpened": "2026-07-21T09:17:09.139Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Joe\\source\\repos\\BE-01\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Joe\\source\\repos\\BE-01\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-21T09:07:14.17Z",
               "EditorCaption": ""
