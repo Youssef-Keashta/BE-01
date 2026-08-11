@@ -38,6 +38,30 @@ Transfer-Encoding: chunked
 {"id":4,"title":"Complete Assignment","done":false}
 ```
 
+## Persistence
+
+Unlike Assignment 1, data now survives a server restart. Tasks created via POST remain after stopping and 
+restarting the app, since they're stored in `TasksDb` rather than in memory.
+
 ## Swagger UI
 
 ![Swagger UI showing all endpoints](./docs/SwaggerUI.png)
+
+## Database
+
+![tasks table in SQL Server](./docs/A2-SS1.png)
+
+## Exploring the database directly
+
+Ran the following query directly against the database using SQL Server Object Explorer, without restarting 
+the server:
+
+​```sql
+UPDATE tasks SET Done = 1;
+​```
+
+![Manual SQL query result](./docs/A2-SS2.png)
+
+Immediately after running this, calling `GET /tasks` through the API showed every task with `"done": true`, 
+with no restart or code change required — confirming the API and the manual query tool read and write the 
+same underlying database, with no caching or syncing layer in between.
