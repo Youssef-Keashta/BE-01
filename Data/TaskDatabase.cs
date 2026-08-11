@@ -124,5 +124,43 @@ namespace BE_01.Data
 
             return ToDoTask.FromDatabase(newId, title, false);
         }
+
+        public static ToDoTask? Update(int id, string title, bool done)
+        {
+            using var connection = new SqlConnection(_connectionString);
+            connection.Open();
+
+            var command = connection.CreateCommand();
+            command.CommandText = @"
+        UPDATE tasks
+        SET Title = @title, Done = @done
+        WHERE Id = @id;";
+            command.Parameters.AddWithValue("@title", title);
+            command.Parameters.AddWithValue("@done", done);
+            command.Parameters.AddWithValue("@id", id);
+
+            int rowsAffected = command.ExecuteNonQuery();
+
+            if (rowsAffected == 0)
+            {
+                return null; // no row matched this id
+            }
+
+            return ToDoTask.FromDatabase(id, title, done);
+        }
+
+        public static bool Delete(int id)
+        {
+            using var connection = new SqlConnection(_connectionString);
+            connection.Open();
+
+            var command = connection.CreateCommand();
+            command.CommandText = "DELETE FROM tasks WHERE Id = @id;";
+            command.Parameters.AddWithValue("@id", id);
+
+            int rowsAffected = command.ExecuteNonQuery();
+
+            return rowsAffected > 0;
+        }
     }
 }
