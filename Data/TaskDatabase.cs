@@ -108,5 +108,21 @@ namespace BE_01.Data
 
             return null;
         }
+
+        public static ToDoTask Insert(string title)
+        {
+            using var connection = new SqlConnection(_connectionString);
+            connection.Open();
+
+            var command = connection.CreateCommand();
+            command.CommandText = @"
+                INSERT INTO tasks (Title, Done) VALUES (@title, 0);
+                SELECT CAST(SCOPE_IDENTITY() AS INT);";
+            command.Parameters.AddWithValue("@title", title);
+
+            int newId = (int)command.ExecuteScalar();
+
+            return ToDoTask.FromDatabase(newId, title, false);
+        }
     }
 }

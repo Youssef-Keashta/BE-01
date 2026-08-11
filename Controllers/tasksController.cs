@@ -36,20 +36,20 @@ namespace BE_01.Controllers
             return Ok(task);
         }
 
-        ////Create new task
-        //[HttpPost]
-        //public ActionResult AddTask(CreatedTaskRequest request)
-        //{
+        //Create new task
+        [HttpPost]
+        public ActionResult AddTask(CreatedTaskRequest request)
+        {
 
-        //    if (request == null || string.IsNullOrEmpty(request.Title))
-        //    {
-        //        return BadRequest(new { error = "Title can't be empty :(" });
-        //    }
-        //    ToDoTask newTask = new ToDoTask(request.Title);
+            if (request == null || string.IsNullOrEmpty(request.Title))
+            {
+                return BadRequest(new { error = "Title can't be empty :(" });
+            }
 
-        //    Tasks.Add(newTask);
-        //    return CreatedAtAction(nameof(GetTaskById), new { id = newTask.Id }, newTask);
-        //}
+            var newTask = TaskDatabase.Insert(request.Title);
+
+            return CreatedAtAction(nameof(GetTaskById), new { id = newTask.Id }, newTask);
+        }
 
         ////Update existing task
         //[HttpPut("{id}")]
