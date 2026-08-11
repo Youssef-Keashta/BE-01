@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Joe\\source\\repos\\BE-01\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|c:\\users\\joe\\source\\repos\\be-01\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|solutionrelative:controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|c:\\users\\joe\\source\\repos\\be-01\\models\\todotask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|solutionrelative:models\\todotask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|c:\\users\\joe\\source\\repos\\be-01\\data\\taskdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|solutionrelative:data\\taskdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,14 +31,6 @@
       "RelativeMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|solutionrelative:models\\createdtaskrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|c:\\users\\joe\\source\\repos\\be-01\\models\\todotask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|solutionrelative:models\\todotask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|c:\\users\\joe\\source\\repos\\be-01\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|solutionrelative:controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|c:\\users\\joe\\source\\repos\\be-01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83734CFD-26D6-439A-8202-DB84CB363381}|BE-01.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,20 +58,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "TaskDatabase.cs",
               "DocumentMoniker": "C:\\Users\\Joe\\source\\repos\\BE-01\\Data\\TaskDatabase.cs",
               "RelativeDocumentMoniker": "Data\\TaskDatabase.cs",
               "ToolTip": "C:\\Users\\Joe\\source\\repos\\BE-01\\Data\\TaskDatabase.cs",
               "RelativeToolTip": "Data\\TaskDatabase.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwEAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAUwG0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-11T09:07:22.57Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Joe\\source\\repos\\BE-01\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -84,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "README.md",
               "DocumentMoniker": "C:\\Users\\Joe\\source\\repos\\BE-01\\README.md",
               "RelativeDocumentMoniker": "README.md",
@@ -97,7 +97,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "UpdatedTaskRequest.cs",
               "DocumentMoniker": "C:\\Users\\Joe\\source\\repos\\BE-01\\Models\\UpdatedTaskRequest.cs",
               "RelativeDocumentMoniker": "Models\\UpdatedTaskRequest.cs",
@@ -110,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "CreatedTaskRequest.cs",
               "DocumentMoniker": "C:\\Users\\Joe\\source\\repos\\BE-01\\Models\\CreatedTaskRequest.cs",
               "RelativeDocumentMoniker": "Models\\CreatedTaskRequest.cs",
@@ -123,26 +123,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "ToDoTask.cs",
               "DocumentMoniker": "C:\\Users\\Joe\\source\\repos\\BE-01\\Models\\ToDoTask.cs",
               "RelativeDocumentMoniker": "Models\\ToDoTask.cs",
               "ToolTip": "C:\\Users\\Joe\\source\\repos\\BE-01\\Models\\ToDoTask.cs",
               "RelativeToolTip": "Models\\ToDoTask.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-21T09:19:15.624Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "tasksController.cs",
               "DocumentMoniker": "C:\\Users\\Joe\\source\\repos\\BE-01\\Controllers\\tasksController.cs",
               "RelativeDocumentMoniker": "Controllers\\tasksController.cs",
               "ToolTip": "C:\\Users\\Joe\\source\\repos\\BE-01\\Controllers\\tasksController.cs",
               "RelativeToolTip": "Controllers\\tasksController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-21T09:17:09.139Z",
               "EditorCaption": ""

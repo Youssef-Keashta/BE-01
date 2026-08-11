@@ -6,11 +6,11 @@
         public int Id { get; set; }
         public string Title { get; set; }
         public bool Done { get; set; } = false;
-        public ToDoTask(string title)
+        public ToDoTask() {}
+
+        public static ToDoTask FromDatabase(int id, string title, bool done)
         {
-            this.Id = _nextId++;
-            this.Title = title;
-            this.Done = false;
+            return new ToDoTask { Id = id, Title = title, Done = done };
         }
     }
 }

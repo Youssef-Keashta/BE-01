@@ -63,5 +63,50 @@ namespace BE_01.Data
                 seedCommand.ExecuteNonQuery();
             }
         }
+
+        public static List<ToDoTask> GetAll()
+        {
+            var tasks = new List<ToDoTask>();
+
+            using var connection = new SqlConnection(_connectionString);
+            connection.Open();
+
+            var command = connection.CreateCommand();
+            command.CommandText = "SELECT Id, Title, Done FROM tasks";
+
+            using var reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                tasks.Add(ToDoTask.FromDatabase(
+                    reader.GetInt32(0),
+                    reader.GetString(1),
+                    reader.GetBoolean(2)
+                ));
+            }
+
+            return tasks;
+        }
+
+        public static ToDoTask? GetById(int id)
+        {
+            using var connection = new SqlConnection(_connectionString);
+            connection.Open();
+
+            var command = connection.CreateCommand();
+            command.CommandText = "SELECT Id, Title, Done FROM tasks WHERE Id = @id";
+            command.Parameters.AddWithValue("@id", id);
+
+            using var reader = command.ExecuteReader();
+            if (reader.Read())
+            {
+                return ToDoTask.FromDatabase(
+                    reader.GetInt32(0),
+                    reader.GetString(1),
+                    reader.GetBoolean(2)
+                );
+            }
+
+            return null;
+        }
     }
 }
