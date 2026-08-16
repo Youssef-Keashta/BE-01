@@ -11,22 +11,41 @@ namespace BE_01.Data
         {
             _connectionString = connectionString;
 
-            EnsureDatabaseExists(connectionString);
+            const int maxRetries = 10;
+            const int delayMilliseconds = 3000;
 
-            using var connection = new SqlConnection(_connectionString);
-            connection.Open();
+            for (int attempt = 1; attempt <= maxRetries; attempt++)
+            {
+                try
+                {
+                    EnsureDatabaseExists(connectionString);
 
-            var createTableCommand = connection.CreateCommand();
-            createTableCommand.CommandText = @"
-        IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='tasks' AND xtype='U')
-        CREATE TABLE tasks (
-            Id INT IDENTITY(1,1) PRIMARY KEY,
-            Title NVARCHAR(255) NOT NULL,
-            Done BIT NOT NULL DEFAULT 0
-        );";
-            createTableCommand.ExecuteNonQuery();
+                    using var connection = new SqlConnection(_connectionString);
+                    connection.Open();
 
-            SeedIfEmpty(connection);
+                    var createTableCommand = connection.CreateCommand();
+                    createTableCommand.CommandText = @"
+                IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='tasks' AND xtype='U')
+                CREATE TABLE tasks (
+                    Id INT IDENTITY(1,1) PRIMARY KEY,
+                    Title NVARCHAR(255) NOT NULL,
+                    Done BIT NOT NULL DEFAULT 0
+                );";
+                    createTableCommand.ExecuteNonQuery();
+
+                    SeedIfEmpty(connection);
+
+                    Console.WriteLine("[TaskDatabase] Initialized successfully.");
+                    return; // success — exit the retry loop
+                }
+                catch (SqlException ex) when (attempt < maxRetries)
+                {
+                    Console.WriteLine($"[TaskDatabase] Attempt {attempt}/{maxRetries} failed: {ex.Message}. Retrying in {delayMilliseconds / 1000}s...");
+                    Thread.Sleep(delayMilliseconds);
+                }
+            }
+
+            throw new Exception("Failed to initialize database after multiple retries.");
         }
 
         private static void EnsureDatabaseExists(string targetConnectionString)
