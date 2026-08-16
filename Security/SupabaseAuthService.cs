@@ -42,5 +42,16 @@ namespace BE_01.Security
 
             return (response.IsSuccessStatusCode, (int)response.StatusCode, body);
         }
+
+        public async Task<(bool Valid, string ResponseBody)> GetUser(string token)
+        {
+            var request = new HttpRequestMessage(HttpMethod.Get, "/auth/v1/user");
+            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+            var response = await _httpClient.SendAsync(request);
+            var body = await response.Content.ReadAsStringAsync();
+
+            return (response.IsSuccessStatusCode, body);
+        }
     }
 }

@@ -1,12 +1,20 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BE_01.Security;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BE_01.Controllers
 {
     [ApiController]
     public class ProtectedController : ControllerBase
     {
+        private readonly SupabaseAuthService _authService;
+
+        public ProtectedController(SupabaseAuthService authService)
+        {
+            _authService = authService;
+        }
+
         [HttpGet("protected/profile")]
-        public ActionResult GetProfile()
+        public async Task<ActionResult> GetProfile()
         {
             var authHeader = Request.Headers["Authorization"].FirstOrDefault();
 
@@ -22,7 +30,14 @@ namespace BE_01.Controllers
                 return Unauthorized(new { error = "Access token required" });
             }
 
-            return Ok(new { message = "Token present (not yet verified)", token });
+            var (valid, body) = await _authService.GetUser(token);
+
+            if (!valid)
+            {
+                return Unauthorized(new { error = "Invalid or expired token" });
+            }
+
+            return Ok(body);
         }
     }
 }
