@@ -1,3 +1,5 @@
+DotNetEnv.Env.Load();
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -10,7 +12,7 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // Initialize the database
-var connectionString = builder.Configuration.GetConnectionString("TasksDb");
+var connectionString = Environment.GetEnvironmentVariable("DATABASE_URL");
 BE_01.Data.TaskDatabase.Initialize(connectionString);
 
 // Configure the HTTP request pipeline.
