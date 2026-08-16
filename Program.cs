@@ -1,6 +1,16 @@
+using BE_01.Security;
+
 DotNetEnv.Env.Load();
 
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddHttpClient<SupabaseAuthService>(client =>
+{
+    var supabaseUrl = Environment.GetEnvironmentVariable("SUPABASE_URL");
+    client.BaseAddress = new Uri(supabaseUrl);
+    client.DefaultRequestHeaders.Add("apikey", Environment.GetEnvironmentVariable("SUPABASE_KEY"));
+});
 
 // Add services to the container.
 
@@ -38,3 +48,4 @@ app.MapGet("/health", () => Results.Ok(new { status = "ok" }));
 app.MapControllers();
 
 app.Run();
+
