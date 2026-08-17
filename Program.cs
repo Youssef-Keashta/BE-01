@@ -1,4 +1,5 @@
 using BE_01.Security;
+using Microsoft.AspNetCore.Authentication;
 
 DotNetEnv.Env.Load();
 
@@ -11,6 +12,11 @@ builder.Services.AddHttpClient<SupabaseAuthService>(client =>
     client.BaseAddress = new Uri(supabaseUrl);
     client.DefaultRequestHeaders.Add("apikey", Environment.GetEnvironmentVariable("SUPABASE_KEY"));
 });
+
+builder.Services.AddAuthentication("Supabase")
+    .AddScheme<AuthenticationSchemeOptions, SupabaseAuthHandler>("Supabase", options => { });
+
+builder.Services.AddAuthorization();
 
 // Add services to the container.
 
@@ -34,6 +40,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+
+
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapGet("/", () => Results.Ok(new

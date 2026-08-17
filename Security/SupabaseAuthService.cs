@@ -53,5 +53,14 @@ namespace BE_01.Security
 
             return (response.IsSuccessStatusCode, body);
         }
+
+        public async Task<bool> SignOut(string token)
+        {
+            var request = new HttpRequestMessage(HttpMethod.Post, "/auth/v1/logout");
+            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+            var response = await _httpClient.SendAsync(request);
+            return response.IsSuccessStatusCode;
+        }
     }
 }

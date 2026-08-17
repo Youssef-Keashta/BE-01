@@ -1,6 +1,7 @@
 ﻿using BE_01.Data;
 using BE_01.Models;
 using BE_01.Security;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BE_01.Controllers
@@ -50,6 +51,15 @@ namespace BE_01.Controllers
             }
 
             return StatusCode(200, body);
+        }
+
+        [Authorize(AuthenticationSchemes = "Supabase")]
+        [HttpPost("logout")]
+        public async Task<ActionResult> Logout()
+        {
+            var token = User.FindFirst("access_token")?.Value;
+            await _authService.SignOut(token);
+            return NoContent();
         }
     }
 }
